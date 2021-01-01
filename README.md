@@ -5,6 +5,17 @@ Dataset : An external Source
 Model : Simense Custom Model , Inception and VGG16.
 
 Modules : Opencv,Tensorflow and Keras.
+
+Exectuion :
+
+        --> Preprocess the Inputs images in a testset folder. by calling the FaceExtractors.
+        --> Pass the Cropped Faces to the Load model from the Embedding.h5
+        --> So we get the Embedding for the faces .
+        --> By using embedding vector we will find the distance between the input image and images in database.
+        --> we will find the smallest distance in the database images .
+        --> smallest distance represents the high similarity.
+        
+
 Experiments Face Recognization:
 
     1.Problem viewd as Binary Classification Problem
